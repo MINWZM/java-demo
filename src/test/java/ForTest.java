@@ -2,16 +2,16 @@ import org.junit.Test;
 
 import java.util.*;
 
-public class ForTest {
+public class ForTest  {
     @Test
-    public void forTest(){
+    public void testFor(){
        String[] str = new String[]{"0","1","2","3","4"};
         for (String aStr : str) {
             System.out.println(aStr);
         }
     }
     @Test
-    public void forArrayListTest(){
+    public void testForArrayList(){
         List<String> lists = new ArrayList<String>();
         lists.add("0");
         lists.add("1");
@@ -22,7 +22,7 @@ public class ForTest {
         }
     }
     @Test
-    public void forHashSetTest(){
+    public void testForHashSet(){
         Set<Float> sets = new HashSet<Float>();
         sets.add(0f);
         sets.add(1f);
@@ -32,7 +32,7 @@ public class ForTest {
         }
     }
     @Test
-    public void forHashMapTest(){
+    public void testForHashMap(){
         Map<Integer,String> maps = new HashMap<Integer, String>();
         maps.put(0,"0");
         maps.put(1,"1");
@@ -46,7 +46,7 @@ public class ForTest {
     }
 
     @Test
-    public void forTreeSetTest(){
+    public void testForTreeSet(){
         Set<Double> sets = new TreeSet<Double>();
         sets.add(2d);
         sets.add(0d);
