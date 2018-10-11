@@ -27,7 +27,7 @@ public class TextInputOuput {
 		//1.流程：程序输入内容 => 创建文本tex1.txt并输出程序输入内容
 		System.out.println("请输入:");
 		//新建文件夹
-		File file = new File("src/min/io/text1.txt");
+		File file = new File("src/JDBC.min/io/text1.txt");
 		//低端流,ture表示将字节写入文件的末尾而不是开头
 		OutputStream outputStream = new FileOutputStream(file,true);
 		//高端流

@@ -8,14 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class min
+ * Servlet implementation class JDBC.min
  */
-@WebServlet("/min")
+@WebServlet("/JDBC.min")
 public class min extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/jsp/min.jsp").forward(request,response);
+		request.getRequestDispatcher("/WEB-INF/jsp/JDBC.min.jsp").forward(request,response);
 	}
 
 

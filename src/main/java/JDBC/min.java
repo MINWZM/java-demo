@@ -1,3 +1,5 @@
+package JDBC;
+
 import lombok.Data;
 
 @Data

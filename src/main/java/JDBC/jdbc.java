@@ -1,3 +1,5 @@
+package JDBC;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +13,7 @@ public class jdbc {
             //1.加载驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
             //2.创建连接
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/min?useSSL=false","root","min");
+            connection = DriverManager.getConnection("JDBC.jdbc:mysql://localhost:3306/JDBC.min?useSSL=false","root","JDBC.min");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -36,8 +38,8 @@ public class jdbc {
 
     public static void main(String[] args) throws SQLException {
         // //4.创建Statement
-        // PreparedStatement pstmt = connection.prepareStatement("select * from min where name= ?");
-        // pstmt.setString(1,"min");
+        // PreparedStatement pstmt = connection.prepareStatement("select * from JDBC.min where name= ?");
+        // pstmt.setString(1,"JDBC.min");
         // //5.创建ResultSet
         // ResultSet rs= pstmt.executeQuery();
         // System.out.println(rs);
