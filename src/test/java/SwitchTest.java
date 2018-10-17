@@ -64,5 +64,14 @@ public class SwitchTest{
 	}
     */
 
+	@Test
+	public void testCase(){
+		int i=0,j=-1;
+		switch(i){
+			// case 0,1:j=1;
+			case 2:j=2;
+		}
+		System.out.print("j="+j);
 
+	}
 }
